@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" /> 
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+        <!--header-->
+        <div class = "jumbotron" >
+            <br> <h2>HELLO</h2>
+            <p>This is a to do list</p><br>
+            <form>
+                <div class="input-group">
+                <input type="text" id="inputID" class="form-control" placeholder="Search for things to do...">
+                </div>
+            </form>
+        </div>
+        <!--header ends-->
+        <div class= "container">
+            <h4>Things to do</h4>
+            <ul class="list-group">
+                <li class="list"> 
+                    <span class ="name">Eat </span>
+                    <span class="button"><button type="button" class="btn">Delete</button></span>
+                </li>
+                <li class="list">
+                    <span class = "name">Sleep</span> 
+                    <span class="button"><button type="button" class="btn">Delete</button></span>
+                </li>
+                <li class="list">
+                        <span class="name"> Code</span> 
+                        <span class="button"><button type="button" class="btn">Delete</button></span>
+                </li>
+                <li class="list"><span class = "name"> Repeat</span>
+                        <span class="button"><button type="button" class="btn">Delete</button></span>
+                </li>
+            </ul>
+            <div id="adding">
+            <form>
+            <span class="input-group"><input type="text" id="add" class="form-control" placeholder="add smthg to do..."> 
+            <button type="button" class="btn" id="btnid">Add</button></span>
+            </form>
+            </div>
+        </div>
+   <script src="app.js"></script>
+</body>
+</html>
