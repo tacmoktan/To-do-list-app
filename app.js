@@ -47,3 +47,22 @@ addF.addEventListener('submit',function(e){
     UL.appendChild(li);
 
 });
+
+//#3 Searching
+const search = document.forms['searchForm'];
+
+search.addEventListener('keyup',function(e){
+    e.preventDefault();
+    //console.log(e.target.value);
+    const list = document.querySelectorAll('ul li');
+    list.forEach(function(activityList){
+        //console.log(activityList.children[0].innerText);
+        const name = activityList.children[0].innerText.toUpperCase();
+        const targetName = e.target.value.toUpperCase();
+        if (name.indexOf(targetName)!=-1){ //filtering w.r.to index
+            activityList.style.display = "block";
+        }else{
+            activityList.style.display = "none";
+        }
+    })
+});
