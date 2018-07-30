@@ -21,7 +21,7 @@ addF.addEventListener('submit',function(e){
     e.preventDefault(); //to prevent from refreshing
     //console.log(e.target);
     //get values
-    const enteredVal = e.target.querySelector('span input').value; //grabs the entered value 
+    let enteredVal = e.target.querySelector('span input').value; //grabs the entered value 
     console.log(enteredVal);
 
     //create elements
@@ -45,7 +45,7 @@ addF.addEventListener('submit',function(e){
     li.appendChild(spanButton);
     spanButton.appendChild(button);
     UL.appendChild(li);
-
+    e.target.querySelector('span input').value =""; //clears the inputfield after submitting 
 });
 
 //#3 Searching
@@ -66,3 +66,12 @@ search.addEventListener('keyup',function(e){
         }
     })
 });
+
+//#4 Hiding feature
+const hide= document.querySelector("#hide");
+hide.addEventListener('change',function(e){
+    if(hide.checked)
+        UL.style.display = "none";
+    else
+        UL.style.display = "block";
+}); 

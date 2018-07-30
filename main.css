@@ -27,7 +27,7 @@ body{
     margin:0px;
     max-width:100%;
     background-color: cornflowerblue;
-  /*  height:auto;*/
+ /*   height:auto;*/
 }
 .container li:hover{
     border-color: blueviolet;
@@ -37,10 +37,11 @@ ul {
 }
 
 .list {
-    padding:10px 10px 5px 20px;
-    margin:15px;
+    padding:20px;
+    margin:25px;
     border-left-style: solid;
     border-color:silver;
+    display:block;
 }
 
 .btn{
@@ -66,4 +67,13 @@ ul {
 #btnid {
     padding:5px;
     width:100px;
+}
+
+#adding #hide {
+    padding:5px;
+    margin:auto;
+    border-color:black;
+    display:inline-block;
+    cursor: pointer;
+    line-height: 50px;
 }
