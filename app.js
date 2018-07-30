@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded",function(){ //DOM function starts here
+    
 const UL = document.querySelector('.container ul');
 //#1 event bubbling
 //since buttons were used so have to click double
@@ -93,3 +95,5 @@ tabsUL.addEventListener('click',function(e){
         })
     }    
 });
+
+}); //DOM function ends here
