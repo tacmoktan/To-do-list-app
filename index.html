@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> 
@@ -60,6 +58,15 @@
             <span class="input-group"><input type="text" id="add" class="form-control" value ="" placeholder="add smthg to do..."> 
             <button type="submit" class="btn" id="btnid">Add</button></span>
             </form>
+            </div>
+            <div id="tabbed-content">
+                <ul id="tabs">
+                <li data-target="#about" class="active">About</li>
+                <li data-target="#contact">Contact</li>
+                </ul>
+                <div class="panel active" id ="about"><p>This is about</p></div>
+                <div class="panel" id ="contact"><p>This is contact</p></div>
+                
             </div>
         </div>
    <script src="app.js"></script>

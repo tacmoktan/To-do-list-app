@@ -9,7 +9,6 @@ UL.addEventListener('click',function(e){
     if(e.target.className === 'btn'){  //edit1
         ul.removeChild(li);
     } 
-
 });
 
 //#2 adding
@@ -75,3 +74,22 @@ hide.addEventListener('change',function(e){
     else
         UL.style.display = "block";
 }); 
+
+//#5 tabbed-content feature
+const tabsUL = document.querySelector('#tabbed-content #tabs');
+const panels = document.querySelectorAll('#tabbed-content div');
+//console.log(panels[0]);
+tabsUL.addEventListener('click',function(e){
+    if(e.target.tagName == "LI"){
+        const targetPanel = document.querySelector(e.target.dataset.target);
+        //console.log(targetPanel);
+        panels.forEach(function(panel){
+            if(panel == targetPanel)
+                panel.classList.add('active'); //adds active to classname, if active is already present, it overwrites old 'active' with new 'active'
+            else
+                panel.classList.remove('active'); //removes "active" from classname if present
+
+            //console.log(panel.className);
+        })
+    }    
+});

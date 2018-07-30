@@ -77,3 +77,33 @@ ul {
     cursor: pointer;
     line-height: 50px;
 }
+#tabbed-content {
+    padding:15px;
+    margin:15px;
+    background: white;
+    border-radius: 5px;
+    
+}
+#tabbed-content #tabs{
+    display:inline-block;
+    font-size: 20px;
+    padding:0px;
+    margin:0px;
+    color:white;
+}
+
+#tabbed-content li {
+    padding:5px;
+    margin:5px 5px 5px 0;
+    cursor: pointer;
+    background:black;
+    border-color:white;
+    border-radius:5px;
+    display: inline-block;
+}
+#tabbed-content .panel.active{
+    display:block;
+}
+#tabbed-content .panel{
+    display:none;
+}
