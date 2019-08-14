@@ -1,18 +1,27 @@
-body{
-    /*background-color: firebrick; */
+*{
+    padding:0;
+    margin:0;
+    font-family:'Josefin Sans', sans-serif;
+  
+}
+.wrapper{
     padding:0px;
     max-width:800px;
-    margin:auto;
+    margin:5px auto;
     border-radius:5px;
-    border-style: solid;
-    border-color:silver;      
+    box-shadow:0 0 8px silver;    
 }
 .jumbotron {
-    background-color:aqua;
     padding:30px;
     margin:0px;
-    text-align:center;
-    
+    text-align:center;   
+}
+
+.jumbotron h2:before{
+    content:"\f044";
+    font-family: FontAwesome;
+    color:cornflowerblue;
+    margin-right:5;
 }
 .input-group{
     padding:0px;
@@ -22,26 +31,50 @@ body{
   /*  border-style:solid;
     border-color:black; */
 }
+
+.form-control:focus{
+    border-color: cornflowerblue;
+    box-shadow: 0 0 8px cornflowerblue;
+}
+
 .container{
     padding:50px;
     margin:0px;
     max-width:100%;
     background-color: cornflowerblue;
+    color:white;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    box-shadow:0 0 8px cornflowerblue;
  /*   height:auto;*/
+}
+.container h3:before{
+    content:"\f022";
+    font-family: FontAwesome;
+    color:whitesmoke;
 }
 .container li:hover{
     border-color: blueviolet;
+    transition:0.15s linear;
 }
+
 ul {
     list-style-type:none;
 }
 
 .list {
-    padding:20px;
-    margin:25px;
-    border-left-style: solid;
-    border-color:silver;
-    display:block;
+    padding: 10px 20px;
+    margin: 20px;
+    border-left: 10px solid;
+    border-color: silver;
+    display: block;
+    position: relative;
+}
+.name{
+    position: absolute;
+    top: 30%;
+    font-family:'Josefin Sans', sans-serif;
+
 }
 
 .btn{
@@ -56,15 +89,14 @@ ul {
 #adding {
     padding:0px;
     max-width:400px;
-    margin:auto;
-  /*  border-color: black;
-    border-style:solid;
-*/}
+    margin: 15px auto;
+}
+
 #add{
     padding:5px;
     margin:auto;
 }
-#btnid {
+#addButton {
     padding:5px;
     width:100px;
 }
@@ -79,9 +111,10 @@ ul {
 }
 #tabbed-content {
     padding:15px;
-    margin:15px;
-    background: white;
+    margin-top:50px;
     border-radius: 5px;
+    background: white;
+    color:black;
     
 }
 #tabbed-content #tabs{
@@ -93,7 +126,7 @@ ul {
 }
 
 #tabbed-content li {
-    padding:5px;
+    padding: 5px 15px;
     margin:5px 5px 5px 0;
     cursor: pointer;
     background:black;
@@ -106,4 +139,28 @@ ul {
 }
 #tabbed-content .panel{
     display:none;
+}
+.panel p{
+    margin:1rem 0;
+}
+
+@media screen and (max-width:650px){
+    .wrapper{
+        margin:0;
+        border-radius:0;
+    }
+
+    .container{
+        padding: 15px 10px;
+        border-radius:0;
+    }
+
+    .list{
+        padding: 10px 0px;
+        margin: 20px 0;
+    }
+
+    .name{
+        margin-left: 20px;
+    }
 }
