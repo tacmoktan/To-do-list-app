@@ -1,75 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>To do list app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" media="screen" href="main.css" /> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
+    <div class="wrapper">
         <!--header-->
-        <div class = "jumbotron" >
-            <br> <h2>HELLO</h2>
-            <p>This is a to do list</p><br>
+        <div class="jumbotron">
+            <h2>To Do List App</h2>
+            <p><a href="#adding">Write down</a> stuffs you're upto below:</p>
             <form id="searchForm">
                 <div class="input-group">
-                    <input type="text" id="inputID" class="form-control" placeholder="Search for things to do...">
+                    <input type="text" id="inputID" class="form-control" placeholder="Search for stuffs you're upto..." />
                 </div>
             </form>
         </div>
         <!--header ends-->
-        <div class= "container">
-            <h4>Things to do</h4>
+        <div class="container">
+            <h3>Things to do</h3>
             <ul class="list-group">
-                <li class="list"> 
-                    <span class ="name">Eat </span>
-                    <span class="button"><button type="button" class="btn">Delete</button></span>
+                <li class="list">
+                    <span class="name">Eat</span>
+                    <span class="button">
+                        <button type="button" class="btn">Delete</button>
+                    </span>
                 </li>
                 <li class="list">
-                    <span class = "name">Sleep</span> 
-                    <span class="button"><button type="button" class="btn">Delete</button></span>
+                    <span class="name">Sleep</span>
+                    <span class="button">
+                        <button type="button" class="btn">Delete</button>
+                    </span>
                 </li>
                 <li class="list">
-                        <span class="name"> Code</span> 
-                        <span class="button"><button type="button" class="btn">Delete</button></span>
+                    <span class="name"> Code</span>
+                    <span class="button">
+                        <button type="button" class="btn">Delete</button>
+                    </span>
                 </li>
                 <li class="list">
-                        <span class = "name"> Repeat</span>
-                        <span class="button"><button type="button" class="btn">Delete</button></span>
+                    <span class="name"> Repeat</span>
+                    <span class="button">
+                        <button type="button" class="btn">Delete</button>
+                    </span>
                 </li>
             </ul>
             <div id="adding">
-            <input type="checkbox" name="checkbox" id ="hide"> 
-            <label for ="hide">Hide the activity</label>  
-            <form id = 'addingForm'>
-            <span class="input-group"><input type="text" id="add" class="form-control" value ="" placeholder="add smthg to do..."> 
-            <button type="submit" class="btn" id="btnid">Add</button></span>
-            </form>
+                <input type="checkbox" name="checkbox" id="hide">
+                <label for="hide">Hide the activity</label>
+                <form id='addingForm'>
+                    <span class="input-group">
+                        <input type="text" id="add" class="form-control" value="" maxlength="20" placeholder="Write stuffs to do later..." required />
+                        <button type="submit" class="btn" id="addButton">Add</button>
+                    </span>
+                </form>
             </div>
             <div id="tabbed-content">
                 <ul id="tabs">
-                <li data-target="#about" class="active">About</li>
-                <li data-target="#contact">Contact</li>
+                    <li data-target="#about" class="active">About</li>
+                    <li data-target="#toolsUsed">Tools Used</li>
                 </ul>
-                <div class="panel active" id ="about"><p>This is about</p></div>
-                <div class="panel" id ="contact"><p>This is contact</p></div>
-                
+                <div class="panel active" id="about">
+                    <p>This is a To Do List App. List out the things that you'd do later.</p>
+                </div>
+                <div class="panel" id="toolsUsed">
+                    <p> HTML, CSS, JavaScript, Bootstrap </p>
+                </div>
+
             </div>
         </div>
-  <script src="app.js"></script> <!--DOM content load edit-->
+    </div>
+    <script src="app.js"></script>
+    <!--DOM content load edit-->
 </body>
+
 </html>
