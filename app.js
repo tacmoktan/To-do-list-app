@@ -25,24 +25,24 @@ document.addEventListener("DOMContentLoaded", function () { //DOM function start
 
         //create elements
         const li = document.createElement('li');
-        const spanName = document.createElement('span');
-        const spanButton = document.createElement('span');
+        const divName = document.createElement('div');
+        const divButton = document.createElement('div');
         const button = document.createElement('button');
 
         //adding styles and classes
         li.classList.add('list');
-        spanName.classList.add('name');
-        spanButton.classList.add('button');
+        divName.classList.add('name');
+        divButton.classList.add('button');
         button.classList.add('btn');
         button.type = 'button';
 
-        spanName.textContent = enteredVal;
-        button.textContent = "Delete";
+        divName.textContent = enteredVal;
+        button.textContent= "Delete";
 
         //appendChild
-        li.appendChild(spanName);
-        li.appendChild(spanButton);
-        spanButton.appendChild(button);
+        li.appendChild(divName);
+        li.appendChild(divButton);
+        divButton.appendChild(button);
         UL.appendChild(li);
         e.target.querySelector('span input').value = ""; //clears the inputfield after submitting 
     });
