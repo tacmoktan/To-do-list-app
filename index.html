@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <title>To do list app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
@@ -22,7 +23,7 @@
     <!-- Font family -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome 4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -32,7 +33,8 @@
         <!--header-->
         <div class="jumbotron">
             <h2>To Do List App</h2>
-            <p><a href="#adding">Write down</a> stuffs you're upto below:</p>
+            <p>
+                <a href="#adding">Write down</a> stuffs you're upto below:</p>
             <form id="searchForm">
                 <div class="input-group">
                     <input type="text" id="inputID" class="form-control" placeholder="Search for stuffs you're upto..." />
@@ -44,28 +46,28 @@
             <h3>Things to do</h3>
             <ul class="list-group">
                 <li class="list">
-                    <span class="name">Eat</span>
-                    <span class="button">
+                    <div class="name">Eat</div>
+                    <div class="button">
                         <button type="button" class="btn">Delete</button>
-                    </span>
+                    </div>
                 </li>
                 <li class="list">
-                    <span class="name">Sleep</span>
-                    <span class="button">
+                    <div class="name">Sleep</div>
+                    <div class="button">
                         <button type="button" class="btn">Delete</button>
-                    </span>
+                    </div>
                 </li>
                 <li class="list">
-                    <span class="name"> Code</span>
-                    <span class="button">
+                    <div class="name"> Code</div>
+                    <div class="button">
                         <button type="button" class="btn">Delete</button>
-                    </span>
+                    </div>
                 </li>
                 <li class="list">
-                    <span class="name"> Repeat</span>
-                    <span class="button">
+                    <div class="name"> Repeat</div>
+                    <div class="button">
                         <button type="button" class="btn">Delete</button>
-                    </span>
+                    </div>
                 </li>
             </ul>
             <div id="adding">
@@ -73,7 +75,7 @@
                 <label for="hide">Hide the activity</label>
                 <form id='addingForm'>
                     <span class="input-group">
-                        <input type="text" id="add" class="form-control" value="" maxlength="20" placeholder="Write stuffs to do later..." required />
+                        <input type="text" id="add" class="form-control" value="" placeholder="Write stuffs to do later..." required />
                         <button type="submit" class="btn" id="addButton">Add</button>
                     </span>
                 </form>
